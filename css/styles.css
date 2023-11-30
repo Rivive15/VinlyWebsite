@@ -1,0 +1,167 @@
+html{
+    background-color: #341C00;
+}
+body{
+    margin: 0em;
+}
+/*  cool idea for colourway: https://pigment.shapefactory.co/?a=3F253A&b=F8223A */
+/* background-image: linear-gradient(357deg, #09171e, #3d312e, #704c3e, #a6694e) */
+form{
+    width:50em;
+    background-color: #341C00;
+}
+label{
+    font-size: 25px;
+    font-weight: bold;
+}
+label, input, textarea{
+    padding: 10px;
+    display:block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #98673D;
+    color: bisque;
+    border-color: #341C00;
+    border-radius: 1em;
+}
+input, textarea{
+    font-size: 18px;
+}
+textarea{
+    height:10em;
+}
+.logo{
+    width: 5em;
+    margin-left: 2em;
+    margin-top: 0.75em;
+}
+.faqs{
+    position: absolute;
+    top: 30%;
+    margin-left: 5%;
+}
+.aboutus{
+    position: absolute;
+    top: 30%;
+    margin-left: 5%;
+}
+.contactus{
+    position: absolute;
+    top: 30%;
+    margin-left: 5%;
+}
+h1{
+    font-size: 50px;
+    color: bisque;
+    margin: 0;
+}
+p{
+    font-size: 25px;
+    color: bisque;
+    margin: 0;
+    margin-bottom: 25px;
+}
+h2{
+    font-size: 35px;
+    color: bisque;
+    margin: 0;
+}
+.contactform{
+    position: absolute;
+    left: 40%;
+    top: 23%;
+    background-color: #ffffff;
+}
+.geolocation
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #ffffff;
+}
+/* nav bar */
+.clicked{
+    background-color: bisque;
+    color: #98673D;
+    border-radius: .75em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav{
+    display:flex;
+}
+ul{
+    position: absolute;
+    right: 450px;
+    background-color: #98673D;
+    list-style-type: none;
+    align-items: baseline;
+    overflow: hidden;
+    border-radius: 1.5em;
+}
+li{
+    padding-right: 1em;
+    display: inline;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li a{
+    color: bisque;
+    text-decoration: none;
+}
+li .basket{
+    padding-left: 50px;
+}
+.spacer{
+    margin: 3em;
+}
+
+/* vinyls */
+.container{
+    display: flex;
+    height: 300px;
+    width: 600px;
+}
+.vinyl{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    box-shadow: -0.25em 0em 0.15em #070005;
+    transition: 0.75s ease-in-out;
+    position: relative;
+    left: 0px;
+}
+/*popup text after clicking vinyl*/
+div#description{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    height: 483px;
+    filter: blur(100%);
+    background-color: #98673D;
+    opacity: 0.7;
+    border-radius: 5px;
+    visibility: hidden;
+}
+.close{
+    background-color: #341C00;
+    size: 5px 5px;
+}
+
+.vinyl:first-child{
+    margin-left: 10em;
+}
+.vinyl:not(:first-child) {
+    margin-left: -11.5em;
+}
+.vinyl:hover{
+    height: 315px;
+    width: 315px;
+    transform: translateY(-7.5px);
+    box-shadow: -0.25em 0em 0.15em #070005;
+}
+.vinyl:hover ~ .vinyl {
+    position: relative;
+    left: 12.5em;
+    transition: 0.4s ease-out;
+}

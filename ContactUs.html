@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>My Vinyl Collection</title>
+        <link rel="icon" href="">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html"><img class = "logo" src ="./images/ratatouille.png">
+                <ul>
+                    <li><a href="./AboutUs.html">About Us</a></li>
+                    <li><a class="clicked">Contact Us</a></li>
+                    <li><a href="./FAQ.html">F.A.Q</a></li>
+                    <li class="basket"><a href="./Basket.html">Basket</a></li>
+                </ul>
+            </nav> 
+        </header>
+
+        <div class="contactus">
+            <h1>Email address:</h1>
+            <p>xyz@gmail.com</p>
+            <h2>Phone number:</h2>
+            <p>083 123 4567</p>
+            <h2>Address</h2>
+            <p>123 xyz lane, Dublin, Ireland</p>
+            <h2>Opening hours</h2>
+            <p>123am - 123pm email + phone, 123am - 123pm in-store</p>
+        </div>
+                <!-- the contact form div -->
+                <div class="contactform">
+                    <form action="vinylWebsite.php" method="post">
+                        <div class="form-control">
+                            <label for="fullname">Your full name</label>
+                            <input required id="fullname" type="text" name="fullname">
+                        </div>
+                        <div class="form-control">
+                            <label id="email">Your email</label>
+                            <input required id="email" type="email" name="email">
+                        </div>
+                        <div class="form-control">
+                            <label id="phonenumber">Your phone number</label>
+                            <input required id="phonenumber" type="number" name="phonenumber">
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Your message</label>
+                            <textarea required id="message" type="text" name="your message"></textarea>
+                        </div>
+                        <div class="form-control">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+    </body>
+</html>
