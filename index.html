@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./css/styles.css">
-    <title>My Vinyl Collection</title>
+    <title>Rivive Records</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link rel="icon" href="">
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>
+<body id="body">
      <header>
         <nav>
-            <a><img class = "logo" src ="./images/ratatouille.png">
+            <a><img class = "logo" src ="./images/logo.png">
             <ul>
                 <li><a href="./AboutUs.html">About Us</a></li>
                 <li><a href="./ContactUs.html">Contact Us</a></li>
@@ -20,103 +22,109 @@
     </header>
 
      <div class="container">
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(0)">
+            <img src="./images/Vinyl1.jpg" class = "image" id="image">
+        </div>
+
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(1);">
+            <img src="./images/Vinyl2.jfif" class = "image" id="image">
+        </div>
+
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(2)">
+            <img src="./images/Vinyl3.jfif" class = "image" id="image">
+        </div>
+
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(3)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl();">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(4)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(5)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(6)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(7)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(8)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(9)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
-            <img src="./images/ratatouille.png" class = "image" id="image">
-        </div>
-
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
-            <img src="./images/ratatouille.png" class = "image" id="image">
-        </div>
-
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
-            <img src="./images/ratatouille.png" class = "image" id="image">
-        </div>
-
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(10)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
     </div>
     <div class="spacer"></div>
     <div class="container">
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(11)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(12)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(13)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(14)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(15)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(16)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(17)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(18)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(19)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(20)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
 
-        <div class="vinyl" onclick="OpenDescription();CurrentVinyl()">
+        <div class="vinyl" onclick="OpenDescription();CurrentVinyl(21)">
             <img src="./images/ratatouille.png" class = "image" id="image">
         </div>
     </div>
 
     <div id="description">
-        <iframe></iframe>
-        <p>
+        <iframe id="spotify"></iframe>
+        <h2 id="albumname">
             
+        </h2>
+        <p id="albumdescription">
+
         </p>
+        <div id="close" onclick="CloseDescription()">
+
+        </div>
     </div>
 </body>
 </html>
