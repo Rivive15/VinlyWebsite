@@ -3,32 +3,14 @@ let vinyls = [
 {
     "vinylimg":``,
     "vinylname": "Simpiternal",
-    "vinyldescription": String.raw`Sempiternal is the fourth studio album by British rock band Bring Me the Horizon. 
-    It was released on 1 April 2013 worldwide through RCA Records, a subsidiary label of Sony Music, and 2 April 2013 in the United States and Canada through Epitaph Records. 
-    It is the first album to feature former Worship keyboardist Jordan Fish and the first with guitarist Lee Malia playing both lead and rhythm components.
-    Written and recorded throughout 2012, Sempiternal showed the band pull diverse influences from nu metal, electronic music, ambient music and pop. 
-    "Sempiternal" is an archaic English word denoting the concept of "everlasting time" that can never actually come to pass. 
-    It stems from the Latin word "sempiternus" (a concatenation of root "semper" and suffix "aeternum").
-    The album spawned four singles ("Shadow Moses"; "Sleepwalking"; "Go to Hell, for Heaven's Sake"; and "Can You Feel My Heart"). 
-    The album made its debut at No. 3 on the UK Album Chart and is their second successive album to top the ARIA Charts in Australia. 
-    It also managed to reach No. 11 on the US Billboard 200 with 27,522 first week sales, 
-    making Sempiternal the band's highest charting album in America until That's the Spirit debuted at No. 2 in 2015. 
-    Upon its release, the album received critical acclaim.`, 
+    "vinyldescription": String.raw`Fourth studio album by the British metalcore band Bring Me the Horizon. The album features three singles, 'Shadow Moses', 'Sleepwalking' and 'And the Snakes Start to Sing'. The album, the title of which means 'everlasting life', entered the UK Albums Chart at #3.`, 
     
     "spotifysrc": `https://open.spotify.com/embed/album/6IYPmM3xsOPL2XPSvf1ZAz?utm_source=generator&theme=0`,
 },
 //vinyl 2
 {
     "vinylname": "POST HUMAN:SURVIVAL HORROR",
-    "vinyldescription": String.raw`Post Human: Survival Horror is a commercial release by British rock band Bring Me the Horizon. 
-    It was released on 30 October 2020 and is intended to be the first in a series of four projects to be released by the band under the Post Human name. 
-    The release was produced by frontman Oliver Sykes and keyboardist Jordan Fish, with additional production from composer Mick Gordon. 
-    Stylistically, the release marks return to the heavier and more aggressive metalcore sound of the band's earlier material.
-    The release was preceded by four singles: "Ludens", 
-    which was also previously released as a single on the Timefall soundtrack for Death Stranding, "Parasite Eve", "Obey", and "Teardrops". 
-    The release received generally positive reviews from critics and became the band's second UK No.1 release. 
-    The second Post Human installment, Post Human: Nex Gen, originally set to be released on 15 September 2023, 
-    has been delayed due to "unforeseen circumstances" leaving the band "unable to complete the record to the standard we'd be happy with".`,
+    "vinyldescription": String.raw`Continuing to push their creative boundaries, even during lockdown, the band have created a body of work that is arguably one of their most exciting, diverse, intricate pieces of music to date. The first two tracks from the EP 'Parasite Eve' and the recent colossus 'Obey' featuring fellow Brit YUNGBLUD, have received critical acclaim and amassed over 115 Million audio and video streams combined to date. Other guests on the EP include BABYMETAL, Nova Twins and Amy Lee from Evanescence.`,
     "spotifysrc": `https://open.spotify.com/embed/album/0e1WaSNDZnoPixaxDNdWo4?utm_source=generator`,
 },
 //vinyl 3
@@ -47,21 +29,21 @@ let vinyls = [
 },
 //vinyl 4
 {
-    "vinylname": "",
-    "vinyldescription": "",
-    "spotifysrc": String.raw``,
+    "vinylname": "Swimming",
+    "vinyldescription": "The fifth studio album by American rapper and singer, and the last album to be released during his lifetime. Production on the album was handled by Miller himself, as well as Dev Hynes, J. Cole, Dâm-Funk, DJ Dahi, Tae Beast, Flying Lotus, and Cardo, among others. The album has no credited features, but contains vocal contributions from Dâm-Funk, Dev Hynes, Snoop Dogg, Syd, Thundercat, and JID. Features the singles 'Small Worlds', 'Self Care' and 'What's the Use?'.",
+    "spotifysrc": String.raw`https://open.spotify.com/embed/album/5wtE5aLX5r7jOosmPhJhhk?utm_source=generator`,
 },
 //vinyl 5
 {
-    "vinylname": "",
-    "vinyldescription": "",
-    "spotifysrc": String.raw``,
+    "vinylname": "Circles",
+    "vinyldescription": "'Circles' is the sixth and final studio album by Mac Miller. Conceived as a sister album to 2018's full length, 'Swimming'. While sonically distinctly different than its predecessor, 'Circles' features many of the hallmarks for which 'Swimming' was critically-acclaimed upon its release - Miller further realising his singing voice in addition to rapping, live instrumentation and earnest, confessional lyrical content.",
+    "spotifysrc": String.raw`https://open.spotify.com/embed/album/5sY6UIQ32GqwMLAfSNEaXb?utm_source=generator`,
 },
 //vinyl 6
 {
-    "vinylname": "",
+    "vinylname": "Actual Life 3",
     "vinyldescription": "",
-    "spotifysrc": String.raw``,
+    "spotifysrc": String.raw`https://open.spotify.com/embed/album/5q2iMctlDvEMYVIawF6Vop?utm_source=generator`,
 },
 //vinyl 7
 {
