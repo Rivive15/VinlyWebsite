@@ -85,25 +85,32 @@ h2{
 }
 
 /*shopping cart*/
-div#itemQuantity{
-    display: flex;
-    position: absolute;
-    right: 1em;
-    top: 6em;
-    align-self:center;
+#basketDisplay
+{
+    overflow-y:scroll;
+    position:absolute;
+    right: 15em;
+    top: 10em;
+    width: 30em;
+    height: 40em;
+    background-color: bisque;
+    border-radius: 1.5em;
+    border: #98673D solid 10px;
 }
-#quantityDisplay{
-    padding-left: 10px; 
-    padding-right: 10px;
-    margin: 0;
-    font-size: 50px;
+.vinylInBasket{
+    display:flex;
 }
-#itemQuantity img{
-    padding-top: 10px;
-    border-radius: 4em;
-    width: 2.5em;
-    height: 2.5em;
+.vinylInBasket img{
+    width: 8em;
+    height: 8em;
+    padding: 10px;
 }
+.vinylInBasket h2,
+.vinylInBasket p{
+    color:#98673D;
+}
+
+
 /* nav bar */
 .clicked{
     background-color: bisque;

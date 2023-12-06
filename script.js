@@ -260,13 +260,19 @@ document.addEventListener("DOMContentLoaded", function()
     DisplayBasketQuantities = () =>
     {
         var price;
-        var priceOfVinyl = 10;
+        var priceOfVinyl = 10; //for assignment sake i made the price a static 10  
         for(i = 0; i < vinyls.length; i++)
         {
             price = vinyls[i].vinylquantity * priceOfVinyl;
             if(vinyls[i].vinylquantity > 0)
             {
                 //display only if 1 or more are added
+                //1. create div class=vinylInBasket + append to div id=basketDisplay
+                //2. create img src=vinyls[i].vinylimg + append to div id=vinylInBasket
+                //3. create div class=inBasketText + append to div id=vinylInBasket
+                //4. create h2 id=vinylNameInBasket innerHTML=vinyls[i].vinylname + append to div class=inBasketText
+                //5.create p id=quantityInBasket innerHTML=vinyls[i].vinylquantity + append to div class=inBasketText
+                //create a <div> with an image inside and album name next to it + price
             }
         }
 
