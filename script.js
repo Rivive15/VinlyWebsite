@@ -259,7 +259,6 @@ document.addEventListener("DOMContentLoaded", function()
 {
     DisplayBasketQuantities = () =>
     {
-        var price;
         var priceOfVinyl = 10; //for assignment sake i made the price a static 10  
         for(i = 0; i < vinyls.length; i++)
         {
