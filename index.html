@@ -23,7 +23,7 @@
 
      <div class="container">
         <div class="vinyl" onclick="OpenDescription();CurrentVinyl(0)">
-            <img src="./images/Vinyl1.jpg" class = "image" id="image">
+            <img src= ./images/Vinyl1.jpg class = "image" id="image">
         </div>
 
         <div class="vinyl" onclick="OpenDescription();CurrentVinyl(1);">
@@ -51,7 +51,7 @@
         </div>
 
         <div class="vinyl" onclick="OpenDescription();CurrentVinyl(7)">
-            <img src="./images/Vinyl8.png" class = "image" id="image">
+            <img src="./images/Vinyl8.webp" class = "image" id="image">
         </div>
 
         <div class="vinyl" onclick="OpenDescription();CurrentVinyl(8)">
@@ -124,6 +124,11 @@
         </p>
         <div id="close" onclick="CloseDescription()">
             <img src="./images/exit.png">
+        </div>
+        <div id="itemQuantity">
+            <img id="removeOne" data-index="" src="./images/minus.png" onclick="UpdateQuantity()">
+            <p id="quantityDisplay">0</p>
+            <img id="addOne"  data-index="" src="./images/plus.png" onclick="UpdateQuantity2()">
         </div>
     </div>
 </body>

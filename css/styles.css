@@ -75,9 +75,34 @@ h2{
 .geolocation
 {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    background-color: #ffffff;
+    left: 40%;
+    top: 30%;
+    color: bisque;
+    background-color: #341C00;
+}
+.geolocation h2{
+    padding-left: 3.5em;
+}
+
+/*shopping cart*/
+div#itemQuantity{
+    display: flex;
+    position: absolute;
+    right: 1em;
+    top: 6em;
+    align-self:center;
+}
+#quantityDisplay{
+    padding-left: 10px; 
+    padding-right: 10px;
+    margin: 0;
+    font-size: 50px;
+}
+#itemQuantity img{
+    padding-top: 10px;
+    border-radius: 4em;
+    width: 2.5em;
+    height: 2.5em;
 }
 /* nav bar */
 .clicked{
