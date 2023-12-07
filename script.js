@@ -86,6 +86,7 @@ let vinyls = [
     "vinyldescription": `The Strokes second full-length release was an album that won't cause the stir that its predecessor did, but has a sneaky appeal all its own. Thanks to the quintet's Lower East Side roots, Velvet Underground and Television references abound with these guys, but Boston new wavers the Cars, and in particular their hit-heavy second album, 1979's Candy-O, provide a more suitable point of reference for Room On Fire.As with Ric Ocasek and company, Strokes frontman Julian Casablancas and his cohorts have a Cars-like knack for sly riffs that creep deeper into ones consciousness with each listen. Not much longer than a half hour from start to finish, this 11-song is modest in intent and execution, and succeeds quite nicely on its own terms.The album features the return of producer Gordon Raphael from 'Is This It' and consists of a slightly smoother sound than its predecessor. Three singles were released from the album; '12:51', 'Reptilia' and 'The End Has No End'.`,
     "spotifysrc": String.raw`https://open.spotify.com/embed/album/3HFbH1loOUbqCyPsLuHLLh?utm_source=generator`,
     "vinylquantity": 0,
+    "vinylimg":"./images/Vinyl10.webp"
 },
 //vinyl 11
 {
@@ -93,7 +94,7 @@ let vinyls = [
     "vinyldescription": `Hot Mulligan writes songs for people to sing as loud as possible. Their music is the cathartic outcry for growth from a generation of forward-thinking Midwesterners caught in the gears of a rusted system in desperate need of hope. The members - Tades Sanville, Chris Freeman, Ryan Malicsi, Garrett "Sniff" Willig, and Brandon Blakeley - use songwriting to explore the lessons they've learned from lives lead in the pursuit of dreams with full awareness of the cost.`,
     "spotifysrc": String.raw`https://open.spotify.com/embed/album/4LR74198fNxGkLyzinQwJz?utm_source=generator`,
     "vinylquantity": 0,
-    "vinylimg": "./images/Vinyl10.webp"
+    "vinylimg": "./images/Vinyl11.webp"
 },
 //vinyl 12
 {
@@ -240,6 +241,9 @@ document.addEventListener("DOMContentLoaded", function()
         if(vinyls[n].vinylquantity > 0)
         {
             vinyls[n].vinylquantity--;
+            localStorage.setItem(`vinylquantity_${n+1}`, vinyls[n].vinylquantity);
+            localStorage.setItem(`vinylname_${n+1}`, vinyls[n].vinylname);
+            localStorage.setItem(`vinylimage_${n+1}`, vinyls[n].vinylimg);
         }
         
     }
@@ -250,33 +254,67 @@ document.addEventListener("DOMContentLoaded", function()
         
         vinyls[n].vinylquantity++;
         element.innerHTML = vinyls[n].vinylquantity;
+        localStorage.setItem(`vinylquantity_${n}`, vinyls[n].vinylquantity);
+        localStorage.setItem(`vinylname_${n}`, vinyls[n].vinylname);
+        localStorage.setItem(`vinylimage_${n}`, vinyls[n].vinylimg);
     }
 });
 
 //displaying basket quantities
+//currently not working
+// Displaying basket quantities
+// currently not working
 let DisplayBasketQuantities;
-document.addEventListener("DOMContentLoaded", function()
-{
-    DisplayBasketQuantities = () =>
-    {
-        var priceOfVinyl = 10; //for assignment sake i made the price a static 10  
-        for(i = 0; i < vinyls.length; i++)
-        {
-            price = vinyls[i].vinylquantity * priceOfVinyl;
-            if(vinyls[i].vinylquantity > 0)
-            {
-                //display only if 1 or more are added
-                //1. create div class=vinylInBasket + append to div id=basketDisplay
-                //2. create img src=vinyls[i].vinylimg + append to div id=vinylInBasket
-                //3. create div class=inBasketText + append to div id=vinylInBasket
-                //4. create h2 id=vinylNameInBasket innerHTML=vinyls[i].vinylname + append to div class=inBasketText
-                //5.create p id=quantityInBasket innerHTML=vinyls[i].vinylquantity + append to div class=inBasketText
-                //create a <div> with an image inside and album name next to it + price
+
+document.addEventListener("DOMContentLoaded", function() {
+    DisplayBasketQuantities = () => {
+        const priceOfVinyl = 10; // for assignment sake, I made the price a static 10
+        const basketDisplay = document.getElementById("basketDisplay");
+
+        // Clear the basketDisplay before rendering
+        basketDisplay.innerHTML = null;
+
+        // Display items from local storage
+        for (let i = 0; i < vinyls.length; i++) {
+            var currentVinyl = vinyls[i];
+            const storedQuantity = localStorage.getItem(`vinylquantity_${i}`);
+            const quantity = storedQuantity ? parseInt(storedQuantity, 10) : 0;
+
+            // Display only if 1 or more are added
+            if (quantity > 0) {
+                const makeDiv = document.createElement("div");
+                const makeImg = document.createElement("img");
+                const makeDivInBasket = document.createElement("div");
+                const makeH2 = document.createElement("h2");
+                const makeP = document.createElement("p");
+
+                makeDiv.setAttribute("class", "vinylInBasket");
+                makeImg.setAttribute("class", "vinylImg");
+                makeImg.setAttribute("src", localStorage.getItem(`vinylimage_${i}`));
+
+                makeDivInBasket.setAttribute("class", "inBasketText");
+                makeH2.setAttribute("class", "vinylNameInBasket");
+                makeH2.innerHTML = localStorage.getItem(`vinylname_${i}`) || currentVinyl.vinylname;
+
+                makeP.setAttribute("class", "vinylQuantityInBasket");
+                makeP.innerHTML = "Quantity:" + quantity;
+
+                makeDivInBasket.appendChild(makeH2);
+                makeDivInBasket.appendChild(makeP);
+
+                makeDiv.appendChild(makeImg);
+                makeDiv.appendChild(makeDivInBasket);
+
+                // Append the created div to the basketDisplay
+                basketDisplay.appendChild(makeDiv);
             }
         }
+    };
 
-    }
+    // Call the DisplayBasketQuantities function when the page is loaded
+    DisplayBasketQuantities();
 });
+
 
 //method for making the description visible by clicking vinyl
 let OpenDescription;
@@ -298,4 +336,4 @@ document.addEventListener("DOMContentLoaded", function()
         const elem = document.getElementById("description");
         elem.style.visibility = "hidden";
     }
-})
+});
