@@ -228,36 +228,35 @@ function CurrentVinyl(n)
 //updating basket quantity
 let UpdateQuantity;
 let UpdateQuantity2;
-document.addEventListener("DOMContentLoaded", function()
-{
-    const element = document.getElementById("quantityDisplay");
-    UpdateQuantity = () =>
-    {
-        const n = document.getElementById("removeOne").getAttribute("data-index");
-        
-        element.innerHTML = vinyls[n].vinylquantity;
-        //only remove 1 if 1 or more are present
-        if(vinyls[n].vinylquantity > 0)
-        {
-            vinyls[n].vinylquantity--;
-            localStorage.setItem(`vinylquantity_${n+1}`, vinyls[n].vinylquantity);
-            localStorage.setItem(`vinylname_${n+1}`, vinyls[n].vinylname);
-            localStorage.setItem(`vinylimage_${n+1}`, vinyls[n].vinylimg);
-        }
-        
-    }
 
-    UpdateQuantity2 = () =>
-    {
+document.addEventListener("DOMContentLoaded", function () {
+    const element = document.getElementById("quantityDisplay");
+
+    UpdateQuantity = () => {
         const n = document.getElementById("removeOne").getAttribute("data-index");
-        
+
+        element.innerHTML = vinyls[n].vinylquantity;
+
+        // Only remove 1 if 1 or more are present
+        if (vinyls[n].vinylquantity > 0) {
+            vinyls[n].vinylquantity--;
+            localStorage.setItem(`vinylquantity_${n}`, vinyls[n].vinylquantity);
+            localStorage.setItem(`vinylname_${n}`, vinyls[n].vinylname);
+            localStorage.setItem(`vinylimage_${n}`, vinyls[n].vinylimg);
+        }
+    };
+
+    UpdateQuantity2 = () => {
+        const n = document.getElementById("removeOne").getAttribute("data-index");
+
         vinyls[n].vinylquantity++;
         element.innerHTML = vinyls[n].vinylquantity;
         localStorage.setItem(`vinylquantity_${n}`, vinyls[n].vinylquantity);
         localStorage.setItem(`vinylname_${n}`, vinyls[n].vinylname);
         localStorage.setItem(`vinylimage_${n}`, vinyls[n].vinylimg);
-    }
+    };
 });
+
 
 //displaying basket quantities
 //currently not working
