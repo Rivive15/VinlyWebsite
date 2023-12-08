@@ -6,6 +6,7 @@ body{
 }
 /*  cool idea for colourway: https://pigment.shapefactory.co/?a=3F253A&b=F8223A */
 /* background-image: linear-gradient(357deg, #09171e, #3d312e, #704c3e, #a6694e) */
+/*contact form + basket form*/
 form{
     width:50em;
     background-color: #341C00;
@@ -13,16 +14,29 @@ form{
 label{
     font-size: 25px;
     font-weight: bold;
-}
-label, input, textarea{
+    color: bisque;
     padding: 10px;
     display:block;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 1em;
+    background-color: #98673D;
+}
+#submit{
     background-color: #98673D;
     color: bisque;
-    border-color: #341C00;
+}
+input, textarea{
+    padding: 10px;
+    display:block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: bisque;
     border-radius: 1em;
+    color: #341C00;
+}
+input{
+    margin-bottom: 5px;
 }
 input, textarea{
     font-size: 18px;
@@ -30,6 +44,19 @@ input, textarea{
 textarea{
     height:10em;
 }
+.contactform{
+    position: absolute;
+    left: 40%;
+    top: 23%;
+    background-color: #ffffff;
+}
+.paymentFormCard, 
+.paymentFormAddress{
+    position: relative;
+    left: 10%;
+    top:20%;
+}
+/*main page stuff*/
 .logo{
     width: 5em;
     margin-left: 2em;
@@ -66,12 +93,7 @@ h2{
     color: bisque;
     margin: 0;
 }
-.contactform{
-    position: absolute;
-    left: 40%;
-    top: 23%;
-    background-color: #ffffff;
-}
+
 .geolocation
 {
     position: absolute;

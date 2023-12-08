@@ -186,7 +186,6 @@ let vinyls = [
 }
 ]
 
-
 //method for updating description html element based on vinyl selected
 function CurrentVinyl(n)
 {
@@ -272,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const basketDisplay = document.getElementById("basketDisplay");
 
         // Clear the basketDisplay before rendering
-        basketDisplay.innerHTML = null;
+        basketDisplay.innerHTML = '';
 
         // Display items from local storage
         for (let i = 0; i < vinyls.length; i++) {

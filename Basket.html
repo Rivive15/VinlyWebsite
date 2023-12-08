@@ -19,7 +19,49 @@
                 </ul>
             </nav> 
         </header>
-
+        <div class="paymentFormAddress">
+            <form action="vinylWebsite.php" method="post">
+                <div class="form-control">
+                    <label for="fullname">Your full name</label>
+                    <input required id="fullname" type="text" name="fullname">
+                </div>
+                <div class="form-control">
+                    <label for="Address">Your full address</label>
+                    <input required id="fulladdress" type="text" name="fulladdress">
+                </div>
+                <div class="form-control">
+                    <label id="email">Your email</label>
+                    <input required id="email" type="email" name="email">
+                </div>
+                <div class="form-control">
+                    <label id="phonenumber">Your phone number</label>
+                    <input required id="phonenumber" type="number" name="phonenumber" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10">
+                </div>
+            </form>
+        </div>
+        <div class="paymentFormCard">
+            <form action="vinylWebsite.php" method="post">
+                <div class="form-control">
+                    <label for="fullname">Name on the card</label>
+                    <input required id="fullname" type="text" name="fullname">
+                </div>
+                <div class="form-control">
+                    <label for="cardNum">Card number</label>
+                    <input required id="cardNum" type="number" name="cardNum" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="16">
+                </div>
+                <div class="form-control">
+                    <label id="exipryDate">Expiry date</label>
+                    <input required id="exipryDate" type="date" name="exipryDate">
+                </div>
+                <div class="form-control">
+                    <label id="cvv">CVV</label>
+                    <input required id="cvv" type="number" name="cvv" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3">
+                </div>
+                <div class="form-control">
+                    <input id="submit" type="submit" value="Purchase">
+                </div>
+            </form>
+        </div>
         <div id="basketDisplay"></div>
     </body>
 </html>
